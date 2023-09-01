@@ -27,3 +27,34 @@ li>a {
     text-decoration: none;
     color: white;
 }
+
+.banner {
+    background-image: linear-gradient(to top right, rgba(228,221,221, 0.50) 10%, rgba(0,0,0, 0.80 ) 60%), url(Assets/AboutBanner.jpg);
+    background-size: cover;
+    background-position: right center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+
+.banner h1 {
+    font-size: 5rem;
+    align-self: center;
+    margin-top: 300px;
+    margin-bottom: 20px;
+}
+
+.banner h5 {
+    font-size: 2rem;
+    align-self: center;
+    margin-bottom: 300px;
+}
+
+.banner p {
+    color: grey;
+    align-self: flex-end;
+}
+
+.banner>p>a {
+    color: gray;
+}
