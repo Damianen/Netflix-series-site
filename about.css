@@ -35,15 +35,12 @@ body {
     display: flex;
     justify-content: center;
     gap: 20px;
-    text-decoration: none;
-    
-}
-
-li {
+    font-weight: 700;
+    font-size: 20px;
     list-style: none;
 }
 
-li>a {
+.nav-flex-item a {
     text-decoration: none;
     color: #10151E;
 }
@@ -52,7 +49,7 @@ li>a {
     background-image: linear-gradient(to top right, rgba(133,158,188, 0.70 ) 10%, rgba(76,97,138, 0.43) 60%), url(Assets/AboutBanner.jpg);
     background-size: cover;
     background-position: right center;
-    color: white;
+    color: rgba(255, 255, 255, 0.90);
     display: flex;
     flex-direction: column;
 }
@@ -85,6 +82,7 @@ li>a {
     grid-template-columns: repeat(4, 1fr);
     gap: 30px;
     margin: 30px;
+    margin-bottom: 40px;
 }
 
 .main div {
@@ -112,4 +110,10 @@ li>a {
 
 .gym {
     grid-area: 4 / 2 / 5 / 5;
+}
+
+.footer {
+    background-color: #4C618A;
+    height: 200px;
+    color: #10151E;
 }
