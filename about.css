@@ -92,8 +92,25 @@ body {
     background-color: #C5CDDE;
 }
 
+.main img {
+    border: 4px solid #4C618A;
+    border-radius: 25px;
+}
+
+.main p {
+    font-size: 22px;
+    padding-top: 12px;
+    padding-bottom: 24px;
+}
+
+.main h1 {
+    font-size: 25px;
+    padding-bottom: 12px;
+}
+
 .highschool {
     grid-area: 1 / 1 / 2 / 4;
+    display: flex;
 }
 
 .cmgt {
@@ -110,10 +127,31 @@ body {
 
 .gym {
     grid-area: 4 / 2 / 5 / 5;
+    display: flex;
+}
+
+.gym section, .highschool section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 25px;
+}
+
+.cmgt section, .avans section {
+    display: flex;
+    flex-direction: column;
+    padding: 25px;
+}
+
+.general section {
+    padding: 25px;
 }
 
 .footer {
     background-color: #4C618A;
     height: 200px;
     color: #10151E;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
