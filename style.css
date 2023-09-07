@@ -96,6 +96,11 @@ body {
     background-image: linear-gradient(to top right, #562022 10%, #231616 60%);
     display: flex;
     color: white;
+    transition: .3s ease;
+}
+
+.gridContainer>div:hover {
+    transform: scale(1.05);
 }
 
 .gridContainer>div>img {
