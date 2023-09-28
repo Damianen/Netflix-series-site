@@ -14,7 +14,7 @@ const filmBarBtns = document.querySelectorAll(".Film-nav-bar li");
 
 filmBarBtns.forEach(btn => {
     btn.addEventListener('click', () => {
-        header.style.backgroundImage = `url(Assets/${btn.className}.jpg)`;
+        header.style.backgroundImage = `url(Assets/${btn.className}.png)`;
         filmBarBtns.forEach(btn1 => {
                 btn1.classList.remove('active');
         });

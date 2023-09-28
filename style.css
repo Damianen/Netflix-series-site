@@ -37,7 +37,7 @@ body {
 }
 
 .header {
-    background-image: url(Assets/serie-1.jpg);
+    background-image: url(Assets/serie-1.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-blend-mode: color;

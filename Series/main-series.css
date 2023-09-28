@@ -5,7 +5,8 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #151515 10%, #323232 60%);
+    background-image: linear-gradient(to bottom, #151515 10%, #323232 60%);
+    color: white;
 }
 
 .nav {
@@ -37,14 +38,12 @@ body {
 }
 
 .header {
-    background-image: url(../Assets/serie-1.jpg);
     background-size: contain;
     background-repeat: no-repeat;
     background-blend-mode: color;
     background-position: center top;
-    color: rgba(255, 255, 255, 0.90);
     display: flex;
-    height: 78vw;
+    height: 60vw;
 }
 
 .title-container {
@@ -57,8 +56,107 @@ body {
 
 .title-container h1 {
     font-size: 2.5vw;
+    padding-bottom: 0.9vw;
 }
 
 .title-container img {
     height: 30vw;
+    border-radius: 10px;
+}
+
+.title-container div {
+    width: 20vw;
+}
+
+.title-container p {
+    font-size: 0.9vw;
+    padding-bottom: 0.9vw;
+}
+
+.rating-container {
+    display: flex;
+}
+
+svg {
+    color: #971c22;
+    position: relative;
+    top: -0.3vw;
+    height: 1.5vw;
+    width: 1.5vw;
+    z-index: -1;
+}
+
+.main {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.actors-container {
+    width: 30vw;
+    display: grid;
+    grid-template-rows: 100px;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    grid-auto-rows: 100px;
+    padding: 30px
+}
+
+[class^='actor-'] {
+    display: flex;
+    gap: 5px;
+}
+
+[class^='actor-'] img {
+    border-radius: 50px;
+}
+
+.info-container {
+    margin: 10px;
+    font-size: 20px;
+    color: rgba(255, 255, 255, 0.6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+}
+
+.info-container .name {
+    color: white;
+    font-weight: 700;
+}
+
+.seasons-episodes {
+    width: 30vw;
+}
+
+.seasons {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.seasons button {
+    background-color: #971c22;
+    border:#151515;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    transition: .3s ease;
+}
+
+.seasons button:hover {
+    transform: scale(1.2);
+}
+
+.footer {
+    height: 200px;
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
