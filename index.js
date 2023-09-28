@@ -21,3 +21,11 @@ filmBarBtns.forEach(btn => {
         btn.classList.add('active');
     });
 });
+
+const seriesDivs = document.querySelectorAll("[class^='main-series-']");
+
+seriesDivs.forEach(div => {
+    div.addEventListener('click', () => {
+        window.location.href = `Series/${div.className}.html`;
+    });
+});

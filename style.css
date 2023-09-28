@@ -5,7 +5,7 @@
 }
 
 body {
-    background-image: linear-gradient(to top, #562022 10%, black 60%);
+    background-image: linear-gradient(to top, #151515 10%, #323232 60%);
 }
 
 .nav {
@@ -44,7 +44,7 @@ body {
     background-position: center top;
     color: rgba(255, 255, 255, 0.90);
     display: flex;
-    height: 90vh;
+    height: 40vw;
 }
 
 .Film-nav-bar {
@@ -83,7 +83,7 @@ body {
 .gridContainer {
     display: grid;
     grid-template-rows: 500px;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(650px, 1fr));
     gap: 30px;
     grid-auto-rows: 500px;
     padding: 30px
@@ -96,6 +96,7 @@ body {
     background-image: linear-gradient(to top right, #562022 10%, #231616 60%);
     display: flex;
     color: white;
+    cursor: pointer;
     transition: .3s ease;
 }
 
