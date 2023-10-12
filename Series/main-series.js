@@ -8,3 +8,16 @@ window.addEventListener("scroll", () => {
         navBar.style.backgroundColor = 'rgba(0, 0, 0, 0)';
     }
 });
+
+const actorDivs = document.querySelectorAll(".actor");
+
+actorDivs.forEach(div => {
+    div.addEventListener('click', () => {
+        if (div.classList.contains("BO")) {
+            window.location.href = "BobOdenkirk.html";
+        }
+        if (div.classList.contains("JO")) {
+            window.location.href = "JonathanBanks.html";
+        }
+    });
+});

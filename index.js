@@ -26,6 +26,8 @@ const seriesDivs = document.querySelectorAll("[class^='main-series-']");
 
 seriesDivs.forEach(div => {
     div.addEventListener('click', () => {
-        window.location.href = `Series/${div.className}.html`;
+        if (div.classList.contains("clickable")) {
+            window.location.href = `Series/${div.classList[0]}.html`;
+        }
     });
 });

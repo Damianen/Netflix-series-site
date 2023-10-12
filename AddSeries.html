@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Series</title>
+    <link rel="stylesheet" href="AddSeries.css">
+</head>
+<body>
+    <div class="header">
+        <ul class="nav">
+            <div class="nav-flex-item">
+                <li class="link1"><a href="index.html">Home</a></li>
+                <li class="link2"><a href="">Series Toevoegen</a></li>
+            </div>
+            <div class="nav-flex-item">
+                <li class="link3"><a href="about.html">About</a></li>
+            </div>
+        </ul>
+        <div class="form">
+            <form>
+                <h1>Series toevoegen: </h1>
+                <div class="main">
+                    <label for="title">Titel: </label>
+                    <input type="text" name="title" id="series_title" placeholder="Titel...">
+                    <label for="description">Beschrijving: </label>
+                    <textarea name="description" id="series_description" cols="30" rows="10"></textarea>
+                    <label for="seasons">Seizoenen: </label>
+                    <input type="number" name="seasons" id="series_seasons" placeholder="1">
+                    <label for="author">Maker: </label>
+                    <input type="text" name="author" id="series_author" placeholder="Maker...">
+                </div>
+                <div class="stars">
+                    <p>Sterren: </p>
+                    <div class="stars-container">
+                        <input type="text" name="star1" id="series_star">
+                        <input type="text" name="star2" id="series_star">
+                        <input type="text" name="star3" id="series_star"> 
+                    </div>
+                                   
+                </div>
+                <div class="Genres">
+                    <p>Genres: </p>
+                    <div class="genres-container">
+                        <div>
+                            <input type="checkbox" name="Crime" id="Crime" value="Crime">
+                            <label for="Crime">Crime</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Actie" id="Actie" value="Actie">
+                            <label for="Actie">Actie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Avontuur" id="Avontuur" value="Avontuur">
+                            <label for="Avontuur">Avontuur</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Biografie" id="Biografie" value="Biografie">
+                            <label for="Biografie">Biografie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Drama" id="Drama" value="Drama">
+                            <label for="Drama">Drama</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Detective" id="Detective" value="Detective">
+                            <label for="Detective">Detective</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Familie" id="Familie" value="Familie">
+                            <label for="Familie">Familie</label>
+                        </div>
+                        <div>   
+                            <input type="checkbox" name="Fantasy" id="Fantasy" value="Fantasy">
+                            <label for="Fantasy">Fantasy</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Gangster" id="Gangster" value="Gangster">
+                            <label for="Gangster">Gangster</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Historie" id="Historie" value="Historie">
+                            <label for="Historie">Historie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Horror" id="Horror" value="Horror">
+                            <label for="Horror">Horror</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Komedie" id="Komedie" value="Komedie">
+                            <label for="Komedie">Komedie</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Misdaad" id="Misdaad" value="Misdaad">
+                            <label for="Misdaad">Misdaad</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Musical" id="Musical" value="Musical">
+                            <label for="Musical">Musical</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Mystery" id="Mystery" value="Mystery">
+                            <label for="Mystery">Mystery</label>
+    
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Oorlog" id="Oorlog" value="Oorlog">
+                            <label for="Oorlog">Oorlog</label>  
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Rampen" id="Rampen" value="Rampen">
+                            <label for="Rampen">Rampen</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Romantisch" id="Romantisch" value="Romantisch">
+                            <label for="Romantisch">Romantisch</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Sport" id="Sport" value="Sport">
+                            <label for="Sport">Sport</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" name="Thriller" id="Thriller" value="Thriller">
+                            <label for="Thriller">Thriller</label>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer">
+        <p>Copyright © Damian Buskens 2023</p>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

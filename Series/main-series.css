@@ -43,34 +43,37 @@ body {
     background-blend-mode: color;
     background-position: center top;
     display: flex;
+    justify-content: center;
     height: 60vw;
 }
 
 .title-container {
-    width: 100%;
+    max-width: 1200px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin-left: auto;
+    margin-right: auto;
     gap: 5vw;
 }
 
 .title-container h1 {
-    font-size: 2.5vw;
-    padding-bottom: 0.9vw;
+    font-size: 64px;
+    padding-bottom: 23px;
 }
 
 .title-container img {
-    height: 30vw;
+    max-width: 40%;
     border-radius: 10px;
 }
 
-.title-container div {
-    width: 20vw;
+.title-container>div {
+    width: 100%;
 }
 
 .title-container p {
-    font-size: 0.9vw;
-    padding-bottom: 0.9vw;
+    font-size: 23px;
+    padding-bottom: 23px;
 }
 
 .rating-container {
@@ -80,9 +83,9 @@ body {
 svg {
     color: #971c22;
     position: relative;
-    top: -0.3vw;
-    height: 1.5vw;
-    width: 1.5vw;
+    top: -10px;
+    height: 40px;
+    width: 40px;
     z-index: -1;
 }
 
@@ -98,15 +101,21 @@ svg {
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
     grid-auto-rows: 100px;
-    padding: 30px
+    padding: 30px;
 }
 
-[class^='actor-'] {
+.actor {
     display: flex;
     gap: 5px;
+    cursor: pointer;
+    transition: .3s ease;
 }
 
-[class^='actor-'] img {
+.actor:hover {
+    transform: scale(1.05);
+}
+
+.actor img {
     border-radius: 50px;
 }
 
@@ -125,31 +134,62 @@ svg {
     font-weight: 700;
 }
 
-.seasons-episodes {
+.reviews {
     width: 30vw;
 }
 
-.seasons {
-    display: flex;
-    list-style: none;
+.review-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 30px;
-    margin-top: 10px;
+    padding: 30px;
 }
 
-.seasons button {
-    background-color: #971c22;
-    border:#151515;
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
-    color: white;
+.review {
+    border: solid #151515 1px;
+    border-radius: 20px;
+    padding: 20px;
+}
+
+.review .title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.review .rating {
+    display: flex;
+}
+
+.user {
+    margin-bottom: 10px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    border: solid #151515 1px;
+    border-radius: 20px;
+    padding: 20px;
+    margin: 30px;
+}
+
+form input {
+    margin-bottom: 20px;
+}
+
+form h3 {
+    margin-bottom: 20px;
+}
+
+form label {
     font-size: 20px;
-    cursor: pointer;
-    transition: .3s ease;
+    margin-bottom: 5px;
 }
 
-.seasons button:hover {
-    transform: scale(1.2);
+form svg {
+    top: 5px;
+    height: 20px;
+    width: 20px;
 }
 
 .footer {
