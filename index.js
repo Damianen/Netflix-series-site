@@ -31,3 +31,27 @@ seriesDivs.forEach(div => {
         }
     });
 });
+
+let currentBG = 1;
+
+setInterval(() => {
+    let offset = 0;
+    let interval = setInterval(() => {
+        offset += 0.1;
+        header.style.backgroundPosition = `${-offset}vw 0, ${100 - offset}vw 0`;
+        if (offset > 100) {
+            clearInterval(interval);
+            offset = 0;
+        }
+    }, 2)
+
+    if (currentBG === 8) {
+        currentBG = 1;
+        header.style.backgroundImage = `url(Assets/serie-${8}.png), url(Assets/serie-${currentBG}.png)`;
+    }
+    else {
+        header.style.backgroundImage = `url(Assets/serie-${currentBG}.png), url(Assets/serie-${currentBG + 1}.png)`;
+        currentBG++;
+    }
+
+}, 30000);

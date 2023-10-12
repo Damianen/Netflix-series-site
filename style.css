@@ -37,11 +37,10 @@ body {
 }
 
 .header {
-    background-image: url(Assets/serie-1.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-blend-mode: color;
-    background-position: center top;
+    background-image: url(Assets/serie-1.png), url(Assets/serie-2.png);
+    background-size: contain, contain;
+    background-repeat: no-repeat, no-repeat;
+    background-position: 0 0, 100vw 0;
     color: rgba(255, 255, 255, 0.90);
     display: flex;
     height: 40vw;
