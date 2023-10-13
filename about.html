@@ -4,65 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About</title>
-    <link rel="stylesheet" href="about.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
 </head>
 <body>
-    <div class="header">
-        <ul class="nav">
-            <div class="nav-flex-item">
-                <li class="link1"><a href="index.html">Home</a></li>
-                <li class="link2"><a href="../AddSeries.html">Series Toevoegen</a></li>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Home</a>
+            <a class="navbar-brand" href="../AddSeries.html">Series Toevoegen</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Zoek naar serie...">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Zoek</button>
+            </form>
+            <a class="navbar-brand" href="about.html">About</a>
+        </div>
+    </nav>
+    <div class="container my-5">
+        <div class="jumbotron">
+            <h1 class="display-4">Hey ik ben Damian Buskens</h1>
+            <h5>Ik ben 19 jaar en mijn hobby is naar de sportschool gaan!</h5>
+        </div>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="Assets/hslogo.jpg" class="card-img-top" alt="hslogo">
+                    <div class="card-body">
+                        <h1 class="card-title">Mijn middelbare School tijd:</h1>
+                        <p class="card-text">Ik heb in Tilburg op de middelbare school gezeten voor 6 jaar. Ik ben begonnen op het VWO voor 5 jaar, na deze 5 jaar had ik besloten om naar de havo te gaan omdat ik niet naar de universiteit wilde maar naar het hbo. Ik heb informatica als keuze vak gevolgd en heb deze op VWO niveau afgerond met een 8. Tijdens deze lessen heb ik al een klein beetje HTML, CSS en javascript geleerd.</p>
+                    </div>
+                </div>
             </div>
-            <div class="nav-flex-item">
-                <li class="link3"><a href="about.html">About</a></li>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="Assets/cmgtlogo.png" class="card-img-top" alt="cmgt logo">
+                    <div class="card-body">
+                        <h1 class="card-title">Mijn vorige opleiding:</h1>
+                        <p class="card-text">Ik heb voordat ik ben begonnen aan Avans een andere opleiding gevolgd, namelijk de CMGT op BUas in Breda. Dit is een opleiding waar je leert om games te maken. Ik vond het een matige opleiding, maar ik vond dat er meer lessen gegeven moesten worden en ik verloor een beetje mijn passie voor games, dus ik vond het ook niet meer leuk om games te maken.</p>
+                    </div>
+                </div>
             </div>
-        </ul>
-    </div>
-    <div class="banner">
-        <h1>Hey ik ben Damian Buskens</h1>
-        <h5>Ik ben 19 jaar en mijn hobby is naar de sportschool gaan!</h5>
-        <p>Credit: <a href="https://unsplash.com/photos/mTorQ9gFfOg">Luis Reyes</a></p>
-    </div>
-    <div class="main">
-        <div class="highschool">
-            <img src="Assets/hslogo.jpg" alt="hslogo">
-            <section>
-                <h1 class="title">Mijn middelbare School tijd: </h1>
-                <p class="text">Ik heb in tilburg op de middelbare school gezeten voor 6 jaar. Ik ben begonnen op het VWO voor 5 jaar, na deze 5 jaar had ik besloten om naar de havo te gaan omdat ik niet naar de universiteit wilde maar naar het hbo. Ik heb informatica als keuze vak gevolgd en heb deze op VWO niveua afgerond met een 8. Tijdens deze lessen heb ik al een klein beetje HTML, CSS en javascript geleerd.</p>
-            </section>
         </div>
-        <div class="cmgt">
-            <img src="Assets/cmgtlogo.png" alt="cmgt logo">
-            <section>
-                <h1 class="title">Mijn vorige opleiding: </h1>
-                <p class="text">Ik heb voor dat ik ben begonnen op het avans een andere opleiding. Namelijk de CMGT op de buas in breda. Dit is een opleiding waar je leert om games te maken. Ik vond het een matige opleiding alleen ik vond dat er meer lessen gegeven moest worden en ik verloor een beetje mijn passie voor games dus ik vond het ook niet meer leuk om games te maken.</p>
-            </section>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <div class="card-body">
+                        <h1 class="card-title">Algemene informatie over mij:</h1>
+                        <p class="card-text">Ik ben Damian Buskens, ik woon in Tilburg. Ik ben 20 jaar en ben jarig op 21 september.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="Assets/AvansLogo.jpg" class="card-img-top" alt="Avans logo">
+                    <div class="card-body">
+                        <h1 class="card-title">Mijn verwachtingen voor mijn huidige opleiding:</h1>
+                        <p class="card-text">Ik verwacht dat ik meer lessen krijg en dat ik ook meer leer over de denkwijze achter programmeren en niet alleen hoe een bepaalde programmeertaal werkt.</p>
+                        <h1 class="card-title">Mijn ervaring tot nu toe:</h1>
+                        <p class="card-text">Ik vind het tot nu toe een erg goede opleiding, alles is goed geregeld.</p>
+                    </div>
+                </div>
+            </div>
         </div>
-        <div class="general">
-            <section>
-                <h1 class="title">Algemene informatie over mij: </h1>
-                <p class="text">Ik ben Damian Buskens, ik woon in tilburg. Ik ben 20 jaar en ben jarig op 21 september.</p>
-            </section>
-        </div>
-        <div class="avans">
-            <img src="Assets/AvansLogo.jpg" alt="avans logo">
-            <section>
-                <h1 class="title">Mijn verwachtingen voor mijn huidige opleiding: </h1>
-                <p class="text">Ik verwacht dat ik meer lessen krijg. En dat ik ook meer te leren krijg over de gedachte gang achter programmeren en niet alleen hoe een bepaalde programeer taal werkt.</p>
-                <h1 class="title">Mijn ervaring tot nu toe: </h1>
-                <p class="text">Ik vind het tot nu toe een erg goede, opleiding alles is goed geregeld.</p>
-            </section>
-        </div>
-        <div class="gym">
-            <img src="Assets/logo.png" alt="gym">
-            <section>
-                <h1 class="title">Mijn grootste hobby:</h1>
-                <p class="text">Mijn grootste hobby is de sportschool. Ik ga 6 keer per week en ik ga naar de basic fit. Ik sport al een jaar.</p>
-            </section>
+
+        <div class="row">
+            <div class="col-md-6">
+                <div class="card mb-4">
+                    <img src="Assets/logo.png" class="card-img-top" alt="gym">
+                    <div class="card-body">
+                        <h1 class="card-title">Mijn grootste hobby:</h1>
+                        <p class="card-text">Mijn grootste hobby is de sportschool. Ik ga 6 keer per week en ik ga naar de Basic Fit. Ik sport al een jaar.</p>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
-    <div class="footer">
+
+    <footer class="footer text-center py-3 bg-dark text-white">
         <p>Copyright © Damian Buskens 2023</p>
-    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>

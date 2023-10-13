@@ -4,123 +4,230 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Netflix Series</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <div class="header">
-        <ul class="nav">
-            <div class="nav-flex-item">
-                <li class="link1"><a href="">Home</a></li>
-                <li class="link2"><a href="../AddSeries.html">Series Toevoegen</a></li>
+<body class="bg-dark text-white">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <a class="navbar-brand" href="../AddSeries.html">Series Toevoegen</a>
+            <form class="form-inline">
+                <input class="form-control mr-sm-2" type="text" placeholder="Zoek naar serie...">
+                <button class="btn btn-outline-danger my-2 my-sm-0" type="submit">Zoek</button>
+            </form>
+            <a class="navbar-brand" href="about.html">About</a>
+        </div>
+    </nav>
+    <div id="headerCarousel" class="carousel slide" data-ride="carousel">
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="Assets/serie-1.png" class="d-block w-100" alt="...">
             </div>
-            <div class="nav-flex-item">
-                <input type="text" placeholder="Zoek naar serie... ">
-                <button>zoek</button>
+            <div class="carousel-item">
+                <img src="Assets/serie-2.png" class="d-block w-100" alt="...">
             </div>
-            <div class="nav-flex-item">
-                <li class="link3"><a href="about.html">About</a></li>
+            <div class="carousel-item">
+                <img src="Assets/serie-3.png" class="d-block w-100" alt="...">
             </div>
-        </ul>
-        <ul class="Film-nav-bar">
-            <li class="serie-1"><button>Breaking Bad</button></li>
-            <li class="serie-2"><button>Better Call Saul</button></li>
-            <li class="serie-3"><button>Game of Thrones</button></li>
-            <li class="serie-4"><button>Peaky Blinders</button></li>
-            <li class="serie-5"><button>Arcane</button></li>
-            <li class="serie-6"><button>Stranger Things</button></li>
-            <li class="serie-7"><button>Rick and Morty</button></li>
-            <li class="serie-8"><button>Avatar The Last Airbender</button></li>
-        </ul>
-    </div>
-    
-    <div class="main">
-        <div class="gridContainer">
-            <div class="main-series-1 clickable">
-                <img src="Assets/series-1.jpg" alt="">
-                <div>
-                    <h1>Breaking Bad</h1>
-                    <p>Een scheikundeleraar bij wie de diagnose inoperabele longkanker is gesteld, gaat samen met een oud-leerling methamfetamine produceren en verkopen om de toekomst van zijn gezin veilig te stellen.</p>
-                    <p>5 seizoenen</p>
-                    <p>Uitkomst periode: 20-01-2008 - 15-07-2012</p>
+            <div class="carousel-item">
+                <img src="Assets/serie-4.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/serie-5.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/serie-6.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/serie-7.png" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="Assets/serie-8.png" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="main-series-1 bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-1.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Breaking Bad</h5>
+                                    <p class="card-text">Een scheikundeleraar bij wie de diagnose inoperabele longkanker is gesteld, gaat samen met een oud-leerling methamfetamine produceren en verkopen om de toekomst van zijn gezin veilig te stellen.</p>
+                                    <p class="card-text">5 seizoenen</p>
+                                    <p class="card-text">Uitkomst periode: 20-01-2008 - 15-07-2012</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-2 clickable">
-                <img src="Assets/series-2.jpg" alt="">
-                <div>
-                    <h1>Better Call Saul</h1>
-                    <p>De beproevingen en beproevingen van strafrechtadvocaat Jimmy McGill in de jaren voorafgaand aan zijn noodlottige ontmoeting met Walter White en Jesse Pinkman.</p>
-                    <p>6 seizoenen</p>
-                    <p>Uitkomst periode: 09-02-2015 - 15-08-2022</p>
+            <div class="col-md-4">
+                <div class="main-series-2 bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-2.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Better Call Saul</h5>
+                                    <p class="card-text">De beproevingen en beproevingen van strafrechtadvocaat Jimmy McGill in de jaren voorafgaand aan zijn noodlottige ontmoeting met Walter White en Jesse Pinkman.</p>
+                                    <p class="card-text">6 seizoenen</p>
+                                    <p class="card-text">Uitkomst periode: 09-02-2015 - 15-08-2022</p> 
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-3">
-                <img src="Assets/series-3.jpg" alt="">
-                <div>
-                    <h1>Game of Thrones</h1>
-                    <p>Negen adellijke families vechten om controle over het land van Westeros, terwijl een oude vijand terugkeert na een millennia inactief te zijn geweest.</p>
-                    <p>8 seizoenen</p>
-                    <p>Uitkomst periode: 18-04-2011 - 20-05-2019</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-3.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Game of Thrones</h5>
+                                    <p class="card-text">Negen adellijke families vechten om controle over het land van Westeros, terwijl een oude vijand terugkeert na een millennia inactief te zijn geweest.</p>
+                                    <p class="card-text">8 seizoenen</p>
+                                    <p class="card-text">Release Period: 09-02-2015 - 15-08-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-4">
-                <img src="Assets/series-4.jpg" alt="">
-                <div>
-                    <h1>Peaky Blinders</h1>
-                    <p>Een gangsterfamilie-epos dat zich afspeelt in het Engeland van de 20e eeuw en draait om een bende die scheermesjes in de toppen van hun petten naait, en hun wrede baas Tommy Shelby.</p>
-                    <p>6 seizoenen</p>
-                    <p>Uitkomst periode: 12-09-2013 - 03-04-2022</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-4.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Peaky Blinders</h5>
+                                    <p class="card-text">Een gangsterfamilie-epos dat zich afspeelt in het Engeland van de 20e eeuw en draait om een bende die scheermesjes in de toppen van hun petten naait, en hun wrede baas Tommy Shelby.</p>
+                                    <p class="card-text">6 seizoenen</p>
+                                    <p class="card-text">Uitkomst periode: 12-09-2013 - 03-04-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-5">
-                <img src="Assets/series-5.jpg" alt="">
-                <div>
-                    <h1>Arcane</h1>
-                    <p>Het verhaal speelt zich af in het Utopische Piltover en de onderdrukte underground van Zaun en volgt de oorsprong van twee iconische League Of Legends-kampioenen en de macht die hen uit elkaar zal drijven.</p>
-                    <p>1 seizoen</p>
-                    <p>Uitkomst periode: 06-11-2021 - 20-11-2021</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-5.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Arcane</h5>
+                                    <p class="card-text">Het verhaal speelt zich af in het Utopische Piltover en de onderdrukte underground van Zaun en volgt de oorsprong van twee iconische League Of Legends-kampioenen en de macht die hen uit elkaar zal drijven.</p>
+                                    <p class="card-text">1 seizoen</p>
+                                    <p class="card-text">Uitkomst periode: 06-11-2021 - 20-11-2021</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-6">
-                <img src="Assets/series-6.jpg" alt="">
-                <div>
-                    <h1>Stranger Things</h1>
-                    <p>Wanneer een jonge jongen verdwijnt, ontdekt een klein stadje een mysterie met geheime experimenten, angstaanjagende bovennatuurlijke krachten en een vreemd klein meisje.</p>
-                    <p>4 seizoenen</p>
-                    <p>Uitkomst periode: 15-07-2016 - 01-07-2022</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-6.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Stranger Things</h5>
+                                    <p class="card-text">Wanneer een jonge jongen verdwijnt, ontdekt een klein stadje een mysterie met geheime experimenten, angstaanjagende bovennatuurlijke krachten en een vreemd klein meisje.</p>
+                                    <p class="card-text">4 seizoenen</p>
+                                    <p class="card-text">Uitkomst periode: 15-07-2016 - 01-07-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-7">
-                <img src="Assets/series-7.jpg" alt="">
-                <div>
-                    <h1>Rick and Morty</h1>
-                    <p>Een animatieserie die de heldendaden volgt van een superwetenschapper en zijn niet zo slimme kleinzoon.</p>
-                    <p>6 seizoen</p>
-                    <p>Uitkomst periode: 04-09-2015 - 11-12-2022</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-7.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Rick and Morty</h5>
+                                    <p class="card-text">Een animatieserie die de heldendaden volgt van een superwetenschapper en zijn niet zo slimme kleinzoon.</p>
+                                    <p class="card-text">6 seizoen</p>
+                                    <p class="card-text">Uitkomst periode: 04-09-2015 - 11-12-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-8">
-                <img src="Assets/series-8.jpg" alt="">
-                <div>
-                    <h1>Avatar the last Airbender</h1>
-                    <p>In een door oorlog verscheurde wereld vol elementaire magie wordt een jonge jongen wakker om een gevaarlijke mystieke zoektocht te ondernemen om zijn lot als Avatar te vervullen en vrede in de wereld te brengen.</p>
-                    <p>3 seizoenen</p>
-                    <p>Uitkomst periode: 21-02-2005 - 19-07-2008</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-8.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">Avatar the last Airbender</h5>
+                                    <p class="card-text">In een door oorlog verscheurde wereld vol elementaire magie wordt een jonge jongen wakker om een gevaarlijke mystieke zoektocht te ondernemen om zijn lot als Avatar te vervullen en vrede in de wereld te brengen.</p>
+                                    <p class="card-text">3 seizoenen</p>
+                                    <p class="card-text">Uitkomst periode: 21-02-2005 - 19-07-2008</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
-            <div class="main-series-9">
-                <img src="Assets/series-9.jpg" alt="">
-                <div>
-                    <h1>The last of us</h1>
-                    <p>Nadat een wereldwijde pandemie de beschaving heeft verwoest, neemt een geharde overlevende de leiding over een 14-jarig meisje dat misschien wel de laatste hoop van de mensheid is.</p>
-                    <p>1 seizoen</p>
-                    <p>Uitkomst periode: 16-01-2023 - 13-03-2023</p>
+            <div class="col-md-4">
+                <div class="bg-secondary card clickable mb-4" >
+                    <div class="ratio ratio-4x3">
+                        <div class="d-flex align-items-center">
+                            <div class="col-md-6">
+                                <img src="Assets/series-9.jpg" class="card-img h-100" alt="">
+                            </div>
+                            <div class="col-md-6">
+                                <div class="card-body">
+                                    <h5 class="card-title">The last of us</h5>
+                                    <p class="card-text">Nadat een wereldwijde pandemie de beschaving heeft verwoest, neemt een geharde overlevende de leiding over een 14-jarig meisje dat misschien wel de laatste hoop van de mensheid is.</p>
+                                    <p class="card-text">1 seizoen</p>
+                                    <p class="card-text">Uitkomst periode: 16-01-2023 - 13-03-2023</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer">
+
+    <footer class="footer text-center py-3 bg-dark">
         <p>Copyright © Damian Buskens 2023</p>
-    </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

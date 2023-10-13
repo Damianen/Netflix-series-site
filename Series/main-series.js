@@ -9,14 +9,14 @@ window.addEventListener("scroll", () => {
     }
 });
 
-const actorDivs = document.querySelectorAll(".actor");
+const actor = document.querySelectorAll(".actor");
 
-actorDivs.forEach(div => {
+actor.forEach(div => {
     div.addEventListener('click', () => {
         if (div.classList.contains("BO")) {
             window.location.href = "BobOdenkirk.html";
         }
-        if (div.classList.contains("JO")) {
+        if (div.classList.contains("JB")) {
             window.location.href = "JonathanBanks.html";
         }
     });
